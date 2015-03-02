@@ -32,7 +32,7 @@ class Projects extends Model implements AuthenticatableContract, CanResetPasswor
 	 */
 	protected $hidden = ['password', 'remember_token'];
 
-		public function user()
+	public function user()
 	{
 		return $this->belongsTo('App\User');
 	}
