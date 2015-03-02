@@ -70,12 +70,12 @@ class ProjectController extends Controller {
         //     $project->exercise01_reps = Input::get('exercise01_reps');
 
             
-            $destinationPath    = 'images/'; // The destination were you store the image.
-            $filename           = $file->getClientOriginalName(); // Original file name that the end user used for it.
-            $mime_type          = $file->getMimeType(); // Gets this example image/png
-            $extension          = $file->getClientOriginalExtension(); // The original extension that the user used example .jpg or .png.
-            $upload_success     = $file->move('images/', $filename); // Now we move the file to its new home.
-            $project->image = 'images/'.$filename;
+            // $destinationPath    = 'images/'; // The destination were you store the image.
+            // $filename           = $file->getClientOriginalName(); // Original file name that the end user used for it.
+            // $mime_type          = $file->getMimeType(); // Gets this example image/png
+            // $extension          = $file->getClientOriginalExtension(); // The original extension that the user used example .jpg or .png.
+            // $upload_success     = $file->move('images/', $filename); // Now we move the file to its new home.
+            // $project->image = 'images/'.$filename;
             $project->user_id = Auth::user()->id;
             $project->save();
             return redirect($this->redirectPath());
