@@ -13,7 +13,8 @@ class WhoopsHandler extends BaseExceptionHandler {
      * @param \Exception $e
      * @return \Symfony\Component\HttpFoundation\Response
      */
-     public function render($request, Exception $e) {
+     public function render($request, Exception $e) 
+     {
         $whoops = new \Whoops\Run;
 
         if ($request->ajax())
