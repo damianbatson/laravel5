@@ -17,6 +17,6 @@ Feature: Laravel Behat Extension
     When I follow "Register"
 
     When I press "Register"
-    Then I should not see "dashboard
+    Then I should not see "dashboard"
     
 
