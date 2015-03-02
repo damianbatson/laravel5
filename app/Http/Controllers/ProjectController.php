@@ -75,7 +75,7 @@ class ProjectController extends Controller {
         //     $mime_type          = $file->getMimeType(); // Gets this example image/png
         //     $extension          = $file->getClientOriginalExtension(); // The original extension that the user used example .jpg or .png.
         //     $upload_success     = $file->move('images/', $filename); // Now we move the file to its new home.
-        //     $project->image = 'images/'.$filename;
+            $project->image = 'images/'.$filename;
             $project->user_id = Auth::user()->id;
             $project->save();
             return redirect($this->redirectPath());
