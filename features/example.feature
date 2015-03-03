@@ -5,7 +5,7 @@ Feature: Laravel Behat Extension
   I want to show an example of installing and using the Laravel Behat extension.
 
   Scenario: Dummy Example
-    Given I am on the homepage
+    Given I am on "/"
     When I follow "Login"
     Then the url should match "/auth/login"
     When I press "Login"
