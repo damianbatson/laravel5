@@ -49,7 +49,7 @@ class Handler extends ExceptionHandler {
 
         // if ($request->ajax())
         // {
-            // $whoops->pushHandler(new \Whoops\Handler\JsonResponseHandler());
+            $whoops->pushHandler(new \Whoops\Handler\JsonResponseHandler());
         // }
         // else
         // {
