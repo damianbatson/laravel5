@@ -53,7 +53,7 @@ class Handler extends ExceptionHandler {
         // }
         // else
         // {
-            $whoops->pushHandler(new \Whoops\Handler\PrettyPageHandler);
+            $whoops->pushHandler(new \Whoops\Handler\PrettyPageHandler());
         // }
 
         return new Response($whoops->handleException($e), $e->getStatusCode(), $e->getHeaders());
