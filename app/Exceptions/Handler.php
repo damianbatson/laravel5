@@ -38,7 +38,7 @@ class Handler extends ExceptionHandler {
         }
         else
         {
-            return $this->renderWithWhoops($e);
+            return $this->renderWithWhoops($request, $e);
             // return parent::render($request, $e);
         }
     }
