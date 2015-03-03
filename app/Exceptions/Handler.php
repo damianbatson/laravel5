@@ -43,13 +43,13 @@ class Handler extends ExceptionHandler {
         }
     }
 
-    public function renderWithWhoops(Exception $e) 
+    protected function renderWithWhoops(Exception $e) 
     {
         $whoops = new \Whoops\Run;
 
         // if ($request->ajax())
         // {
-            $whoops->pushHandler(new \Whoops\Handler\JsonResponseHandler());
+            // $whoops->pushHandler(new \Whoops\Handler\JsonResponseHandler());
         // }
         // else
         // {

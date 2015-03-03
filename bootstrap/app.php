@@ -41,12 +41,6 @@ $app->singleton(
 	'App\Exceptions\Handler'
 );
 
-$app->singleton(
-        'Illuminate\Contracts\Debug\ExceptionHandler',
-        
-        'App\Exceptions\Handler'
-);
-
 /*
 |--------------------------------------------------------------------------
 | Return The Application

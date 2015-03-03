@@ -65,9 +65,9 @@ class ProjectController extends Controller {
             $project = new projects;
             $project->name = $projectrequest->name;
             $project->description = $projectrequest->description;
-        //     $project->exercise01 = Input::get('exercise01');
-        //     $project->exercise01_weight = Input::get('exercise01_weight');
-        //     $project->exercise01_reps = Input::get('exercise01_reps');
+            // $project->exercise01 = Input::get('exercise01');
+            // $project->exercise01_weight = Input::get('exercise01_weight');
+            // $project->exercise01_reps = Input::get('exercise01_reps');
 
             
             // $destinationPath    = 'images/'; // The destination were you store the image.
