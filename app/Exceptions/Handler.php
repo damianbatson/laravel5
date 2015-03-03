@@ -38,12 +38,12 @@ class Handler extends ExceptionHandler {
         }
         else
         {
-            return $this->renderWithWhoops($e);
+            return $this->renderWithWhoops(Exception $e);
             // return parent::render($request, $e);
         }
     }
 
-    protected function renderWithWhoops($request, Exception $e) 
+    protected function renderWithWhoops($request, Exception $e)
     {
         $whoops = new \Whoops\Run;
 
