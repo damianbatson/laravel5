@@ -43,7 +43,7 @@ class Handler extends ExceptionHandler {
         }
     }
 
-    protected function renderWithWhoops($request, Exception $e) 
+    public function renderWithWhoops($request, Exception $e) 
     {
         $whoops = new \Whoops\Run;
 
