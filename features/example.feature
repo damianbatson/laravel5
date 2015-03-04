@@ -17,6 +17,5 @@ Feature: Laravel Behat Extension
     When I follow "Register"
     Then the url should match "/auth/register"
     When I press "Register"
-
-
+    Then I should see "register"
     

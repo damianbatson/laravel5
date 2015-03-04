@@ -3,7 +3,7 @@
 use App\Commands\PurchaseCommand;
 use App\Projects;
 
-class WelcomeController extends Controller {
+class IndexController extends Controller {
 
 	/*
 	|--------------------------------------------------------------------------

@@ -8,7 +8,7 @@
             
                 <!-- <a href="http://laravel.com" title="Laravel PHP Framework"></a> -->
                 <h2 class="projectTitle">Portfolio</h2>
-
+<li id="login">{!! HTML::link('auth/login', 'Login') !!}</li>
                 @foreach ($projects as $project)
                     <div class="col-sm-6">
                     <div class="col-md-8">
