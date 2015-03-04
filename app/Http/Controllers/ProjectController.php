@@ -4,7 +4,7 @@ use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use App\Projects;
 use Illuminate\Support\Facades\Auth;
-
+use Input;
 use Illuminate\Http\Request;
 use App\Http\Requests\ProjectRequest;
 
@@ -56,7 +56,7 @@ class ProjectController extends Controller {
     	
 
         // $input = Input::all();
-        // $file = Input::file('image');
+        $file = Input::file('image');
 
         // $v = Validator::make($input, Projects::$rules);
 
@@ -71,11 +71,11 @@ class ProjectController extends Controller {
 
             
             // $destinationPath    = 'images/'; // The destination were you store the image.
-            // $filename           = $file->getClientOriginalName(); // Original file name that the end user used for it.
-            // $mime_type          = $file->getMimeType(); // Gets this example image/png
-            // $extension          = $file->getClientOriginalExtension(); // The original extension that the user used example .jpg or .png.
-            // $upload_success     = $file->move('images/', $filename); // Now we move the file to its new home.
-            // $project->image = 'images/'.$filename;
+            $filename           = $file->getClientOriginalName(); // Original file name that the end user used for it.
+            $mime_type          = $file->getMimeType(); // Gets this example image/png
+            $extension          = $file->getClientOriginalExtension(); // The original extension that the user used example .jpg or .png.
+            $upload_success     = $file->move('images/', $filename); // Now we move the file to its new home.
+            $project->image = 'images/'.$filename;
             $project->user_id = Auth::user()->id;
             $project->save();
             return redirect($this->redirectPath());
@@ -113,7 +113,14 @@ class ProjectController extends Controller {
 	 */
 	public function edit($id)
 	{
-		//
+		$project = projects::find($id);
+
+        if(is_null($project))
+        {
+            return Redirect::route('projects.index');
+        }
+
+        return view('projects.edit')->with('project', $project);
 	}
 
 	/**
@@ -124,8 +131,28 @@ class ProjectController extends Controller {
 	 */
 	public function update($id)
 	{
-		//
-	}
+		$input = array_except(Input::all(), '_method');
+        // $file = array_except(Input::file('image'), '_files');
+        $file = Input::file('image');
+
+        // $v = Validator::make($input, Projects::$rules);
+
+        // if($v->passes())
+        // {
+            $destinationPath    = 'images/'; // The destination were you store the image.
+            // $filename           = $file->getClientOriginalName(); // Original file name that the end user used for it.
+            // $mime_type          = $file->getMimeType(); // Gets this example image/png
+            // $extension          = $file->getClientOriginalExtension(); // The original extension that the user used example .jpg or .png.
+            // $upload_success     = $file->move($destinationPath, $filename); // Now we move the file to its new home.
+            // $project->image = 'images/'.$filename;
+            projects::find($id)->update($input);
+            // Projects::find($id)->update($file);
+
+            return redirect($this->redirectPath());
+        // }
+
+        // return Redirect::back()->withErrors($v);
+    }
 
 	/**
 	 * Remove the specified resource from storage.
@@ -135,7 +162,9 @@ class ProjectController extends Controller {
 	 */
 	public function destroy($id)
 	{
-		//
+		projects::find($id)->delete();
+
+        return redirect($this->redirectPath());
 	}
 
 }

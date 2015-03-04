@@ -23,7 +23,7 @@ class Projects extends Model implements AuthenticatableContract, CanResetPasswor
 	 *
 	 * @var array
 	 */
-	protected $fillable = ['name', 'email', 'password'];
+	protected $fillable = ['name', 'email', 'password', 'description', 'image'];
 
 	/**
 	 * The attributes excluded from the model's JSON form.

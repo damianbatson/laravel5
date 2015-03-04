@@ -27,4 +27,12 @@ class FeatureContext extends MinkContext implements Context, SnippetAcceptingCon
         throw new PendingException();
         
     }
+
+    public function iSignInWithValidCredentials()
+    {
+        $this->visit('auth/login');
+        $this->fillField('email', $this->email);
+        $this->fillField('password', 'password');
+        $this->pressButton('Login');
+    }
 }
