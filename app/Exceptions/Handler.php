@@ -63,7 +63,7 @@ class Handler extends ExceptionHandler {
             }
 
             return response($whoops->handleException($e),
-                $e->getStatusCode(),
+                // $e->getStatusCode(),
                 $e->getHeaders()
             );
         // }
