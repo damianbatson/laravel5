@@ -32,6 +32,10 @@ class FeatureContext extends MinkContext implements Context, SnippetAcceptingCon
     public function __construct()
     {
     }
+
+    public static function beginTransaction() {
+        DB::beginTransaction();
+    }
     
     public function iAmOnTheProjectspage()
     {
