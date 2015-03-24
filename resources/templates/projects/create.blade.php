@@ -14,8 +14,8 @@
         </div>
     @endif
     <div class="control-group">
-        {!! Form::label('name', 'Day') !!}
-        {!! Form::text('name', '', array('class' => 'form-control', 'placeholder' => 'Please insert your title here...')) !!}
+        {!! Form::label('exercise', 'Exer') !!}
+        {!! Form::text('exercise', '', array('class' => 'form-control', 'placeholder' => 'Please insert your title here...')) !!}
     </div>
     <div class="control-group">
         {!! Form::label('exercise01', 'Exer01') !!}

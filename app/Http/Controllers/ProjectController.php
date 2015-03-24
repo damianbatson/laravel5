@@ -58,32 +58,24 @@ class ProjectController extends Controller {
         // $input = Input::all();
         $file = Input::file('image');
 
-        // $v = Validator::make($input, Projects::$rules);
+        $project = new projects;
+        $project->exercise = $projectrequest->exercise;
+        $project->description = $projectrequest->description;
+        // $project->exercise01 = Input::get('exercise01');
+        // $project->exercise01_weight = Input::get('exercise01_weight');
+        // $project->exercise01_reps = Input::get('exercise01_reps');
 
-        // if ($v->passes()) {
+        
+        // $destinationPath    = 'images/'; // The destination were you store the image.
+        $filename           = $file->getClientOriginalName(); // Original file name that the end user used for it.
+        $mime_type          = $file->getMimeType(); // Gets this example image/png
+        $extension          = $file->getClientOriginalExtension(); // The original extension that the user used example .jpg or .png.
+        $upload_success     = $file->move('images/', $filename); // Now we move the file to its new home.
+        $project->image = 'images/'.$filename;
+        $project->user_id = Auth::user()->id;
+        $project->save();
+        return redirect($this->redirectPath());
 
-            $project = new projects;
-            $project->name = $projectrequest->name;
-            $project->description = $projectrequest->description;
-            // $project->exercise01 = Input::get('exercise01');
-            // $project->exercise01_weight = Input::get('exercise01_weight');
-            // $project->exercise01_reps = Input::get('exercise01_reps');
-
-            
-            // $destinationPath    = 'images/'; // The destination were you store the image.
-            $filename           = $file->getClientOriginalName(); // Original file name that the end user used for it.
-            $mime_type          = $file->getMimeType(); // Gets this example image/png
-            $extension          = $file->getClientOriginalExtension(); // The original extension that the user used example .jpg or .png.
-            $upload_success     = $file->move('images/', $filename); // Now we move the file to its new home.
-            $project->image = 'images/'.$filename;
-            $project->user_id = Auth::user()->id;
-            $project->save();
-            return redirect($this->redirectPath());
-
-        //     return Redirect::route('portfolios.index');
-        // }
-
-        // return Redirect::back()->withInput()->withErrors($v);
     }
 
     	public function redirectPath()

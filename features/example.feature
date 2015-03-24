@@ -9,17 +9,17 @@ Feature: Laravel Behat Extension
     When I follow "Login"
     Then the url should match "/auth/login"
     When I sign in
-    Then I should see "login"
-
+    Then I should be logged in
 
   Scenario: Successful Register
     Given I am on "/auth/register"
     When I follow "Register"
-    Then the url should match "/auth/register"
-    When I press "Register"
     Then I should see "register"
-
-    Scenario: Registration
-    When I register "Bobby Bouwmann" "bobbybouwmann@gmail.com"
+    When I register new user "Bobby Bouwmann" "bobbybouwmann@gmail.com"
     Then I should have an account
+  
+  Scenario: Add New Project
+    Given I am on "/projects/create"
+    When I add new project
+    Then I should see "borg"
     

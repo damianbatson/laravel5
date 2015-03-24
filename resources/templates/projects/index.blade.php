@@ -13,7 +13,7 @@
 
                 <div class="col-sm-12 col-md-12 col-lg-6 nopadding">
                 <div class="col-sm-12 col-md-8 nopadding">
-                    <h3>{!! $project->name !!}</h3>
+                    <h3>{!! $project->exercise !!}</h3>
                     <h4>{!! $project->user->username!!}</h4>
                     <h5>{!! $project->created_at !!}</h5>
                     <p>{!! substr($project->description, 0, 120). '[...]'!!}</p>

@@ -7,7 +7,7 @@
         <div class="col-lg-12">
 <div class="col-md-7 col-lg-8">
     <hr>
-    <h1>{!! $project->name !!}</h1>
+    <h1>{!! $project->exercise !!}</h1>
     <!-- <p class="lead"></p> -->
     <h2 class="projectName">{!! ucwords($project->user->username) !!}</h2>
     <hr>

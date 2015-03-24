@@ -1,11 +1,15 @@
 <?php
 
+use Behat\Behat\Tester\Exception\PendingException;
 use Behat\Behat\Context\Context;
 use Behat\Behat\Context\SnippetAcceptingContext;
 use Behat\Gherkin\Node\PyStringNode;
 use Behat\Gherkin\Node\TableNode;
 use Behat\MinkExtension\Context\MinkContext;
+use Laracasts\Behat\Context\DatabaseTransactions;
 use PHPUnit_Framework_Assert as PHPUnit;
+use Laracasts\TestDummy\Factory;
+use App\Projects;
 
 /**
  * Defines application features from the specific context.
@@ -13,9 +17,11 @@ use PHPUnit_Framework_Assert as PHPUnit;
 class FeatureContext extends MinkContext implements Context, SnippetAcceptingContext
 {
 
-    protected $name;
+    use DatabaseTransactions;
 
+    protected $name;
     protected $email;
+    protected $description;
     /**
      * Initializes context.
      *
@@ -33,7 +39,7 @@ class FeatureContext extends MinkContext implements Context, SnippetAcceptingCon
         
     }
 
-public function iCanDoSomethingWithLaravel()
+    public function iCanDoSomethingWithLaravel()
     {
         PHPUnit::assertEquals('.env.behat', app()->environmentFile());
     }
@@ -54,6 +60,27 @@ public function iCanDoSomethingWithLaravel()
         // $this->fillField('password_confirmation', 'password');
 
         $this->pressButton('Register');
+    }
+
+    public function iAddNewProject()
+    {
+        // $this->exercise = $exercise;
+        // $this->description = $description;
+        // // $this->image = $image
+
+        // // $project = new projects;
+
+        // $this->visit('projects/create');
+
+        $this->fillField('exercise', 'borg');
+        $this->fillField('description', 'cyborg');
+        // // $this->fillField('image', 'image');
+        // // $this->fillField('password_confirmation', 'password');
+        // // $project->save();
+
+        $this->pressButton('Create Post');
+
+        // Factory::create('App\Projects', ['exercise' => $exercise, 'description' => $description]);
     }
 
     /**
@@ -87,6 +114,7 @@ public function iCanDoSomethingWithLaravel()
         $this->fillField('password', 'password');
 
         $this->pressButton('Login');
+        $this->assertPageAddress('/auth/login');
     }
 
     /**
@@ -104,7 +132,9 @@ public function iCanDoSomethingWithLaravel()
      */
     public function iShouldBeLoggedIn()
     {
-        $this->assertSignedIn();
+        // $this->assertSignedIn();
+
+        $this->assertPageAddress('/auth/login');
     }
 
     /**
@@ -124,4 +154,46 @@ public function iCanDoSomethingWithLaravel()
         PHPUnit::assertTrue(Auth::check());
     }
 
+
+    /**
+     * @When I add new project
+     */
+    public function iAddNewProject2()
+    {
+        // $this->exercise = $exercise;
+        // $this->description = $description;
+        // $this->image = $image
+
+        // $project = new projects;
+
+        // $this->visit('projects/create');
+
+        $this->fillField('exercise', 'borg');
+        $this->fillField('description', 'cyborg');
+        $this->fillField('image', 'image');
+        // $this->fillField('password_confirmation', 'password');
+        // $project->save();
+
+        $this->pressButton('Create Post');
+
+        // Factory::create('App\Projects', ['exercise' => $exercise, 'description' => $description]);
+    }
+
+    /**
+     * @When I register new user :arg1 :arg2
+     */
+    public function iRegisterNewUser($name, $email)
+    {
+        $this->name = $name;
+        $this->email = $email;
+
+        $this->visit('auth/register');
+
+        $this->fillField('name', $name);
+        $this->fillField('email', $email);
+        $this->fillField('password', 'password');
+        // $this->fillField('password_confirmation', 'password');
+
+        $this->pressButton('Register');
+    }
 }
