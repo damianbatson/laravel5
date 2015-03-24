@@ -17,7 +17,7 @@ use App\Projects;
 class FeatureContext extends MinkContext implements Context, SnippetAcceptingContext
 {
 
-    use DatabaseTransactions;
+    // use DatabaseTransactions;
 
     protected $name;
     protected $email;
@@ -31,6 +31,16 @@ class FeatureContext extends MinkContext implements Context, SnippetAcceptingCon
      */
     public function __construct()
     {
+    }
+
+    public static function bootstrap()
+    {
+        // Force environment to be testing
+        \Dotenv::setEnvironmentVariable('APP_ENV', 'testing');
+
+        // Bootstrap Laravel
+        $app = require_once __DIR__.'/../../../bootstrap/app.php';
+        $app->boot();
     }
     
     public function iAmOnTheProjectspage()

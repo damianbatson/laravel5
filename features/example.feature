@@ -15,8 +15,7 @@ Feature: Laravel Behat Extension
     Given I am on "/auth/register"
     When I follow "Register"
     Then I should see "register"
-    When I register new user "Bobby Bouwmann" "bobbybouwmann@gmail.com"
-    Then I should have an account
+
   
   Scenario: Add New Project
     Given I am on "/projects/create"
