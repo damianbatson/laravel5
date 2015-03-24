@@ -54,9 +54,9 @@ return [
 
 		'mysql' => [
 			'driver'    => 'mysql',
-			'host'      => env('DB_HOST', 'localhost'),
-			'database'  => env('DB_DATABASE', 'database'),
-			'username'  => env('DB_USERNAME', 'root'),
+			'host'      => env('DB_HOST', 'mysql2.openhost.net.nz'),
+			'database'  => env('DB_DATABASE', 'laravel4_database'),
+			'username'  => env('DB_USERNAME', 'omnimedia01'),
 			'password'  => env('DB_PASSWORD', 'egypt6'),
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
