@@ -17,7 +17,7 @@ use App\Projects;
 class FeatureContext extends MinkContext implements Context, SnippetAcceptingContext
 {
 
-    // use DatabaseTransactions;
+    use DatabaseTransactions;
 
     protected $name;
     protected $email;
