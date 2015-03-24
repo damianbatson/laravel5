@@ -17,7 +17,7 @@ use App\Projects;
 class FeatureContext extends MinkContext implements Context, SnippetAcceptingContext
 {
 
-    use DatabaseTransactions;
+    // use DatabaseTransactions;
 
     protected $name;
     protected $email;
@@ -31,10 +31,6 @@ class FeatureContext extends MinkContext implements Context, SnippetAcceptingCon
      */
     public function __construct()
     {
-    }
-
-    public static function beginTransaction() {
-        DB::beginTransaction();
     }
     
     public function iAmOnTheProjectspage()
