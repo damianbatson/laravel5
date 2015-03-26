@@ -19,9 +19,9 @@ class ExampleTest extends TestCase {
    public function it_follows_links()
    {
        $this->visit('/admin')
-            ->click('Projects')
-            ->andSee('current')
-            ->onPage('/projects');
+            ->click('Login')
+            ->andSee('Login')
+            ->onPage('/auth/login');
    }
 
 
