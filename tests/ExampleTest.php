@@ -2,16 +2,28 @@
 
 class ExampleTest extends TestCase {
 
-	/**
-	 * A basic functional test example.
-	 *
-	 * @return void
-	 */
-	public function testBasicExample()
-	{
-		$response = $this->call('GET', '/');
+    /** @test */
+   public function it_verifies_that_pages_load_properly()
+   {
+       $this->visit('/');
+   }
 
-		$this->assertEquals(200, $response->getStatusCode());
-	}
+    /** @test */
+    public function it_verifies_the_current_page()
+    {
+        $this->visit('/auth/login')
+             ->seePageIs('auth/login');
+    }
+
+    /** @test */
+   public function it_follows_links()
+   {
+       $this->visit('/admin')
+            ->click('Projects')
+            ->andSee('current')
+            ->onPage('/projects');
+   }
+
+
 
 }
