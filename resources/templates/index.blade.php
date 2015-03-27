@@ -12,7 +12,7 @@
                 @foreach ($projects as $project)
                     <div class="col-sm-6">
                     <div class="col-md-8">
-                    <h3 class="projectTitle">{{ $project->name }}</h3>
+                    <h3 class="projectTitle">{{ $project->exercise }}</h3>
                     <h5>{{ $project->id }}</h5>
                     
                     <p>{{ $project->description }}</p>
