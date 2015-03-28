@@ -4,10 +4,9 @@ Feature: Laravel Behat Extension
   As a teacher
   I want to show an example of installing and using the Laravel Behat extension.
 
-  Scenario: Dummy Example
-    Given I am on homepage
+  Scenario: Successful Login
+    Given I am on "/auth/login"
     When I follow "Login"
-    Then the url should match "/auth/login"
     When I sign in
     Then I should be logged in
 
