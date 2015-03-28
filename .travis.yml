@@ -14,10 +14,10 @@ before_script:
   - composer self-update
   - composer install --prefer-source
   # - php artisan key:generate
-  #- npm install - if you want to use gulp/elixir
+  # - npm install - if you want to use gulp/elixir
 script:  
   # Run them tests, y'all
-  #- gulp # if you are running 'npm install' in before_script
+  # - gulp # if you are running 'npm install' in before_script
   - phpunit tests/
   # - vendor/bin/phpspec run -v
   # - vendor/bin/behat --config behat.yml
