@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title></title>
+
+    <!-- Bootstrap core CSS -->
+    <link media="all" type="text/css" rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+
+    <link media="all" type="text/css" rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+
+    
+    <!-- Add custom CSS here -->
+    <link media="all" type="text/css" rel="stylesheet" href="http://localhost/css/styles.css">
+
+
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="http://localhost" class="navbar-brand">Gym Buddy</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="http://localhost/auth/login">Login</a></li>
+            <li><a href="http://localhost">Logout</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container -->
+    </nav>
+
+    
+        
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            
+                <!-- <a href="http://laravel.com" title="Laravel PHP Framework"></a> -->
+                <h2 class="projectTitle">Portfolio</h2>
+                <li id="login"><a href="http://localhost/auth/login">Login</a></li>
+                                    <div class="col-sm-6">
+                    <div class="col-md-8">
+                    <h3 class="projectTitle"></h3>
+                    <h5>9</h5>
+                    
+                    <p>hoisrtrstdytd</p>
+                    <p><a href="http://localhost/projects/9">link to project</a></p>
+                    
+                    </div>
+                    <div class="col-md-4"><img class="img-responsive" src="images/1117 029.jpg"></div>
+                    <hr>
+                    </div>
+                                    <div class="col-sm-6">
+                    <div class="col-md-8">
+                    <h3 class="projectTitle"></h3>
+                    <h5>10</h5>
+                    
+                    <p>gugubj</p>
+                    <p><a href="http://localhost/projects/10">link to project</a></p>
+                    
+                    </div>
+                    <div class="col-md-4"><img class="img-responsive" src="images/1117 055.jpg"></div>
+                    <hr>
+                    </div>
+                                    <div class="col-sm-6">
+                    <div class="col-md-8">
+                    <h3 class="projectTitle"></h3>
+                    <h5>12</h5>
+                    
+                    <p>dtycdt</p>
+                    <p><a href="http://localhost/projects/12">link to project</a></p>
+                    
+                    </div>
+                    <div class="col-md-4"><img class="img-responsive" src="images/Copy of DSC00367.JPG"></div>
+                    <hr>
+                    </div>
+                                    <div class="col-sm-6">
+                    <div class="col-md-8">
+                    <h3 class="projectTitle"></h3>
+                    <h5>17</h5>
+                    
+                    <p>yuhih7g7gjl</p>
+                    <p><a href="http://localhost/projects/17">link to project</a></p>
+                    
+                    </div>
+                    <div class="col-md-4"><img class="img-responsive" src="images/1111 024.jpg"></div>
+                    <hr>
+                    </div>
+                                    <div class="col-sm-6">
+                    <div class="col-md-8">
+                    <h3 class="projectTitle"></h3>
+                    <h5>22</h5>
+                    
+                    <p>uhuibgui</p>
+                    <p><a href="http://localhost/projects/22">link to project</a></p>
+                    
+                    </div>
+                    <div class="col-md-4"><img class="img-responsive" src="images/1117 066.jpg"></div>
+                    <hr>
+                    </div>
+                                    <div class="col-sm-6">
+                    <div class="col-md-8">
+                    <h3 class="projectTitle"></h3>
+                    <h5>37</h5>
+                    
+                    <p>hio9</p>
+                    <p><a href="http://localhost/projects/37">link to project</a></p>
+                    
+                    </div>
+                    <div class="col-md-4"><img class="img-responsive" src="images/Video call snapshot 42.png"></div>
+                    <hr>
+                    </div>
+                                    <div class="col-sm-6">
+                    <div class="col-md-8">
+                    <h3 class="projectTitle"></h3>
+                    <h5>40</h5>
+                    
+                    <p>jhh90ho8h</p>
+                    <p><a href="http://localhost/projects/40">link to project</a></p>
+                    
+                    </div>
+                    <div class="col-md-4"><img class="img-responsive" src="images/DSC00658.JPG"></div>
+                    <hr>
+                    </div>
+                                    <div class="col-sm-6">
+                    <div class="col-md-8">
+                    <h3 class="projectTitle"></h3>
+                    <h5>41</h5>
+                    
+                    <p>jpoopjboh9090</p>
+                    <p><a href="http://localhost/projects/41">link to project</a></p>
+                    
+                    </div>
+                    <div class="col-md-4"><img class="img-responsive" src="images/1117 032.jpg"></div>
+                    <hr>
+                    </div>
+                                    <div class="col-sm-6">
+                    <div class="col-md-8">
+                    <h3 class="projectTitle"></h3>
+                    <h5>42</h5>
+                    
+                    <p>borg</p>
+                    <p><a href="http://localhost/projects/42">link to project</a></p>
+                    
+                    </div>
+                    <div class="col-md-4"><img class="img-responsive" src="images/eva 20.jpg"></div>
+                    <hr>
+                    </div>
+                                    <div class="col-sm-6">
+                    <div class="col-md-8">
+                    <h3 class="projectTitle"></h3>
+                    <h5>52</h5>
+                    
+                    <p>y98y89t78t</p>
+                    <p><a href="http://localhost/projects/52">link to project</a></p>
+                    
+                    </div>
+                    <div class="col-md-4"><img class="img-responsive" src=""></div>
+                    <hr>
+                    </div>
+                                    <div class="col-sm-6">
+                    <div class="col-md-8">
+                    <h3 class="projectTitle"></h3>
+                    <h5>54</h5>
+                    
+                    <p>jopjooj</p>
+                    <p><a href="http://localhost/projects/54">link to project</a></p>
+                    
+                    </div>
+                    <div class="col-md-4"><img class="img-responsive" src="images/1117 051.jpg"></div>
+                    <hr>
+                    </div>
+                                    <div class="col-sm-6">
+                    <div class="col-md-8">
+                    <h3 class="projectTitle"></h3>
+                    <h5>60</h5>
+                    
+                    <p>yu</p>
+                    <p><a href="http://localhost/projects/60">link to project</a></p>
+                    
+                    </div>
+                    <div class="col-md-4"><img class="img-responsive" src=""></div>
+                    <hr>
+                    </div>
+                                    <div class="col-sm-6">
+                    <div class="col-md-8">
+                    <h3 class="projectTitle"></h3>
+                    <h5>61</h5>
+                    
+                    <p>8u7g7878</p>
+                    <p><a href="http://localhost/projects/61">link to project</a></p>
+                    
+                    </div>
+                    <div class="col-md-4"><img class="img-responsive" src="images/1117 055.jpg"></div>
+                    <hr>
+                    </div>
+                                    <div class="col-sm-6">
+                    <div class="col-md-8">
+                    <h3 class="projectTitle"></h3>
+                    <h5>62</h5>
+                    
+                    <p>l[0--h8h8h</p>
+                    <p><a href="http://localhost/projects/62">link to project</a></p>
+                    
+                    </div>
+                    <div class="col-md-4"><img class="img-responsive" src="images/1117 053.jpg"></div>
+                    <hr>
+                    </div>
+                                    <div class="col-sm-6">
+                    <div class="col-md-8">
+                    <h3 class="projectTitle"></h3>
+                    <h5>64</h5>
+                    
+                    <p>8h89hbjkl</p>
+                    <p><a href="http://localhost/projects/64">link to project</a></p>
+                    
+                    </div>
+                    <div class="col-md-4"><img class="img-responsive" src="images/1117 062.jpg"></div>
+                    <hr>
+                    </div>
+                                    <div class="col-sm-6">
+                    <div class="col-md-8">
+                    <h3 class="projectTitle"></h3>
+                    <h5>65</h5>
+                    
+                    <p>boibio</p>
+                    <p><a href="http://localhost/projects/65">link to project</a></p>
+                    
+                    </div>
+                    <div class="col-md-4"><img class="img-responsive" src=""></div>
+                    <hr>
+                    </div>
+                                    <div class="col-sm-6">
+                    <div class="col-md-8">
+                    <h3 class="projectTitle"></h3>
+                    <h5>66</h5>
+                    
+                    <p>nhihih9h</p>
+                    <p><a href="http://localhost/projects/66">link to project</a></p>
+                    
+                    </div>
+                    <div class="col-md-4"><img class="img-responsive" src="images/Video call snapshot 24.png"></div>
+                    <hr>
+                    </div>
+                                    <div class="col-sm-6">
+                    <div class="col-md-8">
+                    <h3 class="projectTitle"></h3>
+                    <h5>68</h5>
+                    
+                    <p>g78tgoih</p>
+                    <p><a href="http://localhost/projects/68">link to project</a></p>
+                    
+                    </div>
+                    <div class="col-md-4"><img class="img-responsive" src="images/Video call snapshot 20.png"></div>
+                    <hr>
+                    </div>
+                                    <div class="col-sm-6">
+                    <div class="col-md-8">
+                    <h3 class="projectTitle"></h3>
+                    <h5>71</h5>
+                    
+                    <p>dytd67d67</p>
+                    <p><a href="http://localhost/projects/71">link to project</a></p>
+                    
+                    </div>
+                    <div class="col-md-4"><img class="img-responsive" src=""></div>
+                    <hr>
+                    </div>
+                                    <div class="col-sm-6">
+                    <div class="col-md-8">
+                    <h3 class="projectTitle"></h3>
+                    <h5>72</h5>
+                    
+                    <p>t98t789</p>
+                    <p><a href="http://localhost/projects/72">link to project</a></p>
+                    
+                    </div>
+                    <div class="col-md-4"><img class="img-responsive" src=""></div>
+                    <hr>
+                    </div>
+                                    <div class="col-sm-6">
+                    <div class="col-md-8">
+                    <h3 class="projectTitle"></h3>
+                    <h5>73</h5>
+                    
+                    <p>fyufyu</p>
+                    <p><a href="http://localhost/projects/73">link to project</a></p>
+                    
+                    </div>
+                    <div class="col-md-4"><img class="img-responsive" src=""></div>
+                    <hr>
+                    </div>
+                                    <div class="col-sm-6">
+                    <div class="col-md-8">
+                    <h3 class="projectTitle"></h3>
+                    <h5>74</h5>
+                    
+                    <p>dtyw6</p>
+                    <p><a href="http://localhost/projects/74">link to project</a></p>
+                    
+                    </div>
+                    <div class="col-md-4"><img class="img-responsive" src=""></div>
+                    <hr>
+                    </div>
+                                    <div class="col-sm-6">
+                    <div class="col-md-8">
+                    <h3 class="projectTitle"></h3>
+                    <h5>75</h5>
+                    
+                    <p>guigsaser</p>
+                    <p><a href="http://localhost/projects/75">link to project</a></p>
+                    
+                    </div>
+                    <div class="col-md-4"><img class="img-responsive" src=""></div>
+                    <hr>
+                    </div>
+                                    <div class="col-sm-6">
+                    <div class="col-md-8">
+                    <h3 class="projectTitle"></h3>
+                    <h5>76</h5>
+                    
+                    <p>cyberborg desc</p>
+                    <p><a href="http://localhost/projects/76">link to project</a></p>
+                    
+                    </div>
+                    <div class="col-md-4"><img class="img-responsive" src=""></div>
+                    <hr>
+                    </div>
+                                    <div class="col-sm-6">
+                    <div class="col-md-8">
+                    <h3 class="projectTitle"></h3>
+                    <h5>77</h5>
+                    
+                    <p>guigi</p>
+                    <p><a href="http://localhost/projects/77">link to project</a></p>
+                    
+                    </div>
+                    <div class="col-md-4"><img class="img-responsive" src=""></div>
+                    <hr>
+                    </div>
+                                    <div class="col-sm-6">
+                    <div class="col-md-8">
+                    <h3 class="projectTitle"></h3>
+                    <h5>78</h5>
+                    
+                    <p>gui</p>
+                    <p><a href="http://localhost/projects/78">link to project</a></p>
+                    
+                    </div>
+                    <div class="col-md-4"><img class="img-responsive" src=""></div>
+                    <hr>
+                    </div>
+                                    <div class="col-sm-6">
+                    <div class="col-md-8">
+                    <h3 class="projectTitle"></h3>
+                    <h5>79</h5>
+                    
+                    <p>y89</p>
+                    <p><a href="http://localhost/projects/79">link to project</a></p>
+                    
+                    </div>
+                    <div class="col-md-4"><img class="img-responsive" src="images/Copy of DSC00360.JPG"></div>
+                    <hr>
+                    </div>
+                                    <div class="col-sm-6">
+                    <div class="col-md-8">
+                    <h3 class="projectTitle"></h3>
+                    <h5>80</h5>
+                    
+                    <p>cybernetic</p>
+                    <p><a href="http://localhost/projects/80">link to project</a></p>
+                    
+                    </div>
+                    <div class="col-md-4"><img class="img-responsive" src="images/DSC00365.JPG"></div>
+                    <hr>
+                    </div>
+                                    <div class="col-sm-6">
+                    <div class="col-md-8">
+                    <h3 class="projectTitle"></h3>
+                    <h5>81</h5>
+                    
+                    <p>sansa</p>
+                    <p><a href="http://localhost/projects/81">link to project</a></p>
+                    
+                    </div>
+                    <div class="col-md-4"><img class="img-responsive" src="images/eva 5.JPG"></div>
+                    <hr>
+                    </div>
+                                    <div class="col-sm-6">
+                    <div class="col-md-8">
+                    <h3 class="projectTitle"></h3>
+                    <h5>82</h5>
+                    
+                    <p>0-u0-</p>
+                    <p><a href="http://localhost/projects/82">link to project</a></p>
+                    
+                    </div>
+                    <div class="col-md-4"><img class="img-responsive" src="images/1117 051.jpg"></div>
+                    <hr>
+                    </div>
+                                    <div class="col-sm-6">
+                    <div class="col-md-8">
+                    <h3 class="projectTitle"></h3>
+                    <h5>83</h5>
+                    
+                    <p>fyu</p>
+                    <p><a href="http://localhost/projects/83">link to project</a></p>
+                    
+                    </div>
+                    <div class="col-md-4"><img class="img-responsive" src="images/DSCF0340.JPG"></div>
+                    <hr>
+                    </div>
+                                    <div class="col-sm-6">
+                    <div class="col-md-8">
+                    <h3 class="projectTitle"></h3>
+                    <h5>84</h5>
+                    
+                    <p>fuigiugui</p>
+                    <p><a href="http://localhost/projects/84">link to project</a></p>
+                    
+                    </div>
+                    <div class="col-md-4"><img class="img-responsive" src="images/Video call snapshot 37.png"></div>
+                    <hr>
+                    </div>
+                                    <div class="col-sm-6">
+                    <div class="col-md-8">
+                    <h3 class="projectTitle"></h3>
+                    <h5>85</h5>
+                    
+                    <p>gui</p>
+                    <p><a href="http://localhost/projects/85">link to project</a></p>
+                    
+                    </div>
+                    <div class="col-md-4"><img class="img-responsive" src="images/Video call snapshot 39.png"></div>
+                    <hr>
+                    </div>
+                                    <div class="col-sm-6">
+                    <div class="col-md-8">
+                    <h3 class="projectTitle"></h3>
+                    <h5>86</h5>
+                    
+                    <p>huguiug</p>
+                    <p><a href="http://localhost/projects/86">link to project</a></p>
+                    
+                    </div>
+                    <div class="col-md-4"><img class="img-responsive" src="images/1117 050.jpg"></div>
+                    <hr>
+                    </div>
+                                    <div class="col-sm-6">
+                    <div class="col-md-8">
+                    <h3 class="projectTitle"></h3>
+                    <h5>87</h5>
+                    
+                    <p>cghc</p>
+                    <p><a href="http://localhost/projects/87">link to project</a></p>
+                    
+                    </div>
+                    <div class="col-md-4"><img class="img-responsive" src="images/1117 047.jpg"></div>
+                    <hr>
+                    </div>
+                                    <div class="col-sm-6">
+                    <div class="col-md-8">
+                    <h3 class="projectTitle"></h3>
+                    <h5>88</h5>
+                    
+                    <p></p>
+                    <p><a href="http://localhost/projects/88">link to project</a></p>
+                    
+                    </div>
+                    <div class="col-md-4"><img class="img-responsive" src=""></div>
+                    <hr>
+                    </div>
+                                    <div class="col-sm-6">
+                    <div class="col-md-8">
+                    <h3 class="projectTitle"></h3>
+                    <h5>89</h5>
+                    
+                    <p></p>
+                    <p><a href="http://localhost/projects/89">link to project</a></p>
+                    
+                    </div>
+                    <div class="col-md-4"><img class="img-responsive" src=""></div>
+                    <hr>
+                    </div>
+                                    <div class="col-sm-6">
+                    <div class="col-md-8">
+                    <h3 class="projectTitle"></h3>
+                    <h5>90</h5>
+                    
+                    <p></p>
+                    <p><a href="http://localhost/projects/90">link to project</a></p>
+                    
+                    </div>
+                    <div class="col-md-4"><img class="img-responsive" src=""></div>
+                    <hr>
+                    </div>
+                                    <div class="col-sm-6">
+                    <div class="col-md-8">
+                    <h3 class="projectTitle"></h3>
+                    <h5>91</h5>
+                    
+                    <p></p>
+                    <p><a href="http://localhost/projects/91">link to project</a></p>
+                    
+                    </div>
+                    <div class="col-md-4"><img class="img-responsive" src=""></div>
+                    <hr>
+                    </div>
+                                    <div class="col-sm-6">
+                    <div class="col-md-8">
+                    <h3 class="projectTitle"></h3>
+                    <h5>92</h5>
+                    
+                    <p></p>
+                    <p><a href="http://localhost/projects/92">link to project</a></p>
+                    
+                    </div>
+                    <div class="col-md-4"><img class="img-responsive" src=""></div>
+                    <hr>
+                    </div>
+                
+            
+        </div>
+    </div>
+
+    <hr>
+
+    <footer>
+        <div class="row">
+            <div class="col-lg-12">
+                <p>Copyright &copy; Company 2013 &middot; Facebook &middot; Twitter &middot; Google+</p>
+            </div>
+        </div>
+    </footer>
+
+</div><!-- /.container -->
+
+
+      
+    <!-- Bootstrap core JavaScript -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- Make sure to add jQuery - download the most recent version at http://jquery.com/ -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+
+  </body>
+</html>
