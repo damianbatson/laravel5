@@ -20,7 +20,8 @@ class HomeController extends Controller {
 	 */
 	public function __construct()
 	{
-		$this->middleware('auth');
+		$this->middleware('guest');
+		$this->projects = $projects;
 	}
 
 	/**
@@ -30,7 +31,9 @@ class HomeController extends Controller {
 	 */
 	public function index()
 	{
-		return view('home');
+		$projects = projects::all();
+
+		return view('index')->with('projects', $projects);
 	}
 
 }

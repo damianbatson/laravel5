@@ -7,11 +7,11 @@
         <div class="col-lg-12">
 @if($projects->count())
 
-    <div class="col-md-8">
+    <div class="col-sm-6 col-md-8">
     
                 @foreach($projects as $project)
 
-                <div class="col-sm-12 col-md-12 col-lg-6 nopadding">
+                {{-- <div class="col-sm-12 col-md-12 col-lg-6"> --}}
                 <div class="col-sm-12 col-md-8 nopadding">
                     <h3>{!! $project->exercise !!}</h3>
                     <h4>{!! $project->user->username!!}</h4>
@@ -26,7 +26,7 @@
                     </p>
                 </div>
                 <div class="col-sm-12 col-md-4 nopadding"><img class="img-responsive" src="{!! $project->image !!}"></div>
-                </div>
+                {{-- </div> --}}
 
                 @endforeach
 
@@ -34,10 +34,10 @@
     @else
     <div class="alert alert-info col-md-8" style="margin-top: 15px">You currently have no posts</div>
     @endif
-<div class="col-md-4">
-    <div class="well">
+<div class="col-sm-6 col-md-4">
+    <div class="well well-sm projectName">
     {!! link_to_route('projects.create', 'Create a new post', null, array('class' => 'btn btn-primary')) !!}
-    <h4 class="projectHyperLink">These are your current posts</h4>
+    <h4 class="projectText">These are your current posts</h4>
     </div>
 </div>
 

@@ -1,4 +1,4 @@
-@extends('layouts.auth')
+@extends('layouts.master')
 
 @section('content')
 
@@ -8,7 +8,7 @@
         <div class="col-md-4">
           <div class="panel panel-info">
             <div class="panel-heading">Please Login</div>
-            <div class="panel-body">
+            <div class="panel-body dashboardText">
 				{!! Form::open(['url' => 'auth/login']) !!}
 				@if($errors->any())
 				<div class="alert alert-danger">
