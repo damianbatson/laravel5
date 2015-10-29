@@ -22,7 +22,8 @@ class ProjectController extends Controller {
 		
 		$this->projects = $projects;
 		// $this->projectimages = $projectimages;
-		$this->middleware ('auth');
+		$this->middleware ('auth', ['except' => ['show']]);
+		// $this->middleware('can.handle.job', ['only' => ['show', 'edit', 'update']]);
 	}
 	/**
 	 * Display a listing of the resource.
