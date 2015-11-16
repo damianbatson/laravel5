@@ -1,9 +1,9 @@
-@extends('layouts.single')
+@extends('layouts.master')
 
 @section('content')
 
-<div class="container">
-    <div class="row">
+{{-- <div class="container"> --}}
+    {{-- <div class="row"> --}}
         <div class="col-lg-12">
             
                 <!-- <a href="http://laravel.com" title="Laravel PHP Framework"></a> -->
@@ -26,18 +26,11 @@
 
             
         </div>
-    </div>
+{{--     </div>
 
     <hr>
 
-    <footer>
-        <div class="row">
-            <div class="col-lg-12">
-                <p>Copyright &copy; Company 2013 &middot; Facebook &middot; Twitter &middot; Google+</p>
-            </div>
-        </div>
-    </footer>
 
-</div><!-- /.container -->
+</div><!-- /.container --> --}}
 
 @stop

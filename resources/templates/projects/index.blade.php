@@ -2,8 +2,8 @@
 
 @section('content')
 
-<div class="container">
-    <div class="row">
+{{-- <div class="container"> --}}
+    {{-- <div class="row"> --}}
         <div class="col-lg-12">
 @if($projects->count())
 
@@ -42,7 +42,7 @@
 </div>
 
         </div>
-    </div>
+{{--     </div>
 
     <hr>
 
@@ -54,6 +54,6 @@
         </div>
     </footer>
 
-</div><!-- /.container -->
+</div><!-- /.container --> --}}
 
 @stop
