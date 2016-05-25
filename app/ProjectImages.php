@@ -5,9 +5,9 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Auth\Passwords\CanResetPassword;
 use Illuminate\Contracts\Auth\Authenticatable as AuthenticatableContract;
 use Illuminate\Contracts\Auth\CanResetPassword as CanResetPasswordContract;
-use App\User;
+use App\Projects;
 
-class Projects extends Model implements AuthenticatableContract, CanResetPasswordContract {
+class ProjectImages extends Model implements AuthenticatableContract, CanResetPasswordContract {
 
 	use Authenticatable, CanResetPassword;
 
@@ -16,14 +16,14 @@ class Projects extends Model implements AuthenticatableContract, CanResetPasswor
 	 *
 	 * @var string
 	 */
-	protected $table = 'projects';
+	protected $table = 'project_images';
 
 	/**
 	 * The attributes that are mass assignable.
 	 *
 	 * @var array
 	 */
-	protected $fillable = ['exercise', 'exercise01', 'exercise01_weight', 'exercise01_reps', 'description', 'image'];
+	protected $fillable = ['name', 'image1', 'image2', 'image3', 'link'];
 
 	/**
 	 * The attributes excluded from the model's JSON form.
@@ -32,13 +32,9 @@ class Projects extends Model implements AuthenticatableContract, CanResetPasswor
 	 */
 	protected $hidden = ['password', 'remember_token'];
 
-	public function user()
-	{
-		return $this->belongsTo('App\User');
-	}
-
-	public function projectimages(){
-		return $this->hasMany('App\ProjectImages', 'id');
-	}
+	// public function projects()
+	// {
+	// 	return $this->belongsTo('App\Projects');
+	// }
 
 }

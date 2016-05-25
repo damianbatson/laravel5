@@ -3,6 +3,7 @@
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use App\Projects;
+use App\ProjectImages;
 use Illuminate\Support\Facades\Auth;
 use Input;
 use Illuminate\Http\Request;
@@ -16,11 +17,12 @@ class ProjectController extends Controller {
 	 *
 	 * @return void
 	 */
-	public function __construct(Projects $projects, Auth $auth)
+	public function __construct(Projects $projects, ProjectImages $projectimages, Auth $auth)
 	{
 		
 		$this->projects = $projects;
-		$this->auth = $auth;
+		// $this->projectimages = $projectimages;
+		$this->middleware ('auth');
 	}
 	/**
 	 * Display a listing of the resource.
@@ -61,9 +63,9 @@ class ProjectController extends Controller {
         $project = new projects;
         $project->exercise = $projectrequest->exercise;
         $project->description = $projectrequest->description;
-        // $project->exercise01 = Input::get('exercise01');
-        // $project->exercise01_weight = Input::get('exercise01_weight');
-        // $project->exercise01_reps = Input::get('exercise01_reps');
+        $project->exercise01 = $projectrequest->exercise01;
+        $project->exercise01_weight = $projectrequest->exercise01_weight;
+        $project->exercise01_reps = $projectrequest->exercise01_reps;
 
         
         // $destinationPath    = 'images/'; // The destination were you store the image.
@@ -78,7 +80,7 @@ class ProjectController extends Controller {
 
     }
 
-    	public function redirectPath()
+    public function redirectPath()
 	{
 		return property_exists($this, 'redirectTo') ? $this->redirectTo : 'projects';
 	}
@@ -92,9 +94,11 @@ class ProjectController extends Controller {
 	public function show($id)
 	{
 		$project = projects::find($id);
-        // $projectimages = Projects::find($id)->projectimages;
+        // $projectimages = ProjectImages::find($id);
 
         return view('projects.show')->with('project', $project);
+
+        // return view('projects.show')->with('projectimages', $projectimages);
 	}
 
 	/**
