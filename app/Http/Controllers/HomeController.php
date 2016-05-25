@@ -20,7 +20,8 @@ class HomeController extends Controller {
 	 */
 	public function __construct()
 	{
-		$this->middleware('auth');
+		$this->middleware('guest');
+		$this->projects = $projects;
 	}
 
 	/**
@@ -30,7 +31,13 @@ class HomeController extends Controller {
 	 */
 	public function index()
 	{
+<<<<<<< HEAD
 		return view('bootstrap');
+=======
+		$projects = projects::all();
+
+		return view('index')->with('projects', $projects);
+>>>>>>> 32cac751fe0cc6a72d71c631417838d894ac265c
 	}
 
 }

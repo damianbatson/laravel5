@@ -28,6 +28,7 @@ class SendConEmailHandler {
 		// dd($event);
 		//send email confirmation
 		// $this->$mailer->send;
+		$event->podcastId;
 	}
 
 }

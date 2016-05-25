@@ -2,16 +2,20 @@
 
 @section('content')
 
-<div class="container">
-    <div class="row">
+{{-- <div class="container"> --}}
+    {{-- <div class="row"> --}}
         <div class="col-lg-12">
 @if($projects->count())
 
-    <div class="col-md-8">
+    <div class="col-sm-6 col-md-8">
     
                 @foreach($projects as $project)
 
+<<<<<<< HEAD
                 <div class="col-sm-12 col-md-12 col-lg-6">
+=======
+                {{-- <div class="col-sm-12 col-md-12 col-lg-6"> --}}
+>>>>>>> 32cac751fe0cc6a72d71c631417838d894ac265c
                 <div class="col-sm-12 col-md-8 nopadding">
                     <h3>{!! $project->exercise !!}</h3>
                     <h4>{!! $project->user->username!!}</h4>
@@ -26,7 +30,7 @@
                     </p>
                 </div>
                 <div class="col-sm-12 col-md-4 nopadding"><img class="img-responsive" src="{!! $project->image !!}"></div>
-                </div>
+                {{-- </div> --}}
 
                 @endforeach
 
@@ -34,7 +38,11 @@
     @else
     <div class="alert alert-info col-md-8" style="margin-top: 15px">You currently have no posts</div>
     @endif
+<<<<<<< HEAD
 <div class="col-md-4">
+=======
+<div class="col-sm-6 col-md-4">
+>>>>>>> 32cac751fe0cc6a72d71c631417838d894ac265c
     <div class="well well-sm projectName">
     {!! link_to_route('projects.create', 'Create a new post', null, array('class' => 'btn btn-primary')) !!}
     <h4 class="projectText">These are your current posts</h4>
@@ -42,7 +50,7 @@
 </div>
 
         </div>
-    </div>
+{{--     </div>
 
     <hr>
 
@@ -54,6 +62,6 @@
         </div>
     </footer>
 
-</div><!-- /.container -->
+</div><!-- /.container --> --}}
 
 @stop

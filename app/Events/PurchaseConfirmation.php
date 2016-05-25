@@ -29,6 +29,7 @@ class PurchaseConfirmation extends Event {
 		// dd($event);
 		//send email confirmation
 		// $this->$mailer->send;
+		$event->podcast;
 	}
 
 }

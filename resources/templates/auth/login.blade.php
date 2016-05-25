@@ -1,14 +1,13 @@
-@extends('layouts.auth')
+@extends('layouts.master')
 
 @section('content')
 
-    <div class="container">
-      <div class="row">
+
         <div class="col-lg-12">
         <div class="col-md-4">
           <div class="panel panel-info">
             <div class="panel-heading">Please Login</div>
-            <div class="panel-body">
+            <div class="panel-body dashboardText">
 				{!! Form::open(['url' => 'auth/login']) !!}
 				@if($errors->any())
 				<div class="alert alert-danger">
@@ -37,18 +36,12 @@
 	</div>
         
         
-    	</div>
+{{--     	</div>
       
       <hr>
       
-      <footer>
-        <div class="row">
-          <div class="col-lg-12">
-            <p>Copyright &copy; Company 2013 &middot; Facebook &middot; Twitter &middot; Google+</p>
-          </div>
-        </div>
-      </footer>
+@include('partials/footer')
 
-    </div><!-- /.container -->
+    </div><!-- /.container --> --}}
 
 @stop
