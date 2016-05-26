@@ -2,7 +2,8 @@
 
 @section('content')
 
-
+    <div class="container">
+      <div class="row">
         <div class="col-lg-12">
         <div class="col-md-4">
           <div class="panel panel-info">
@@ -36,12 +37,12 @@
 	</div>
         
         
-{{--     	</div>
+</div>
       
       <hr>
       
 @include('partials/footer')
 
-    </div><!-- /.container --> --}}
+    </div><!-- /.container -->
 
 @stop

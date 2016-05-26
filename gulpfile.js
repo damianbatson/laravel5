@@ -15,10 +15,7 @@ elixir(function(mix) {
     mix.sass([
         "app.scss"
     ], "public/css/app.css");
-<<<<<<< HEAD
 
     mix.copy('node_modules/bootstrap-sass/assets/fonts/bootstrap/','public/fonts/bootstrap'); 
 
-=======
->>>>>>> 32cac751fe0cc6a72d71c631417838d894ac265c
 });

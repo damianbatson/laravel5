@@ -1,6 +1,17 @@
  <div class="row">
-    <a href="#/admin" class="thumb"><button class="btn btn-primary" type="button">Admin</button></a>
-
+    
+    <div class="col-md-3">
+        <div class="panel panel-default">
+            <div class="panel-heading"><h3>Pool Admin</h3></div>
+            <div class="panel-body">
+                <input type="text" ng-model="newpool.title">
+                <button class="btn btn-primary" type="button" ng-click="addPool()">Add Pool</button>
+                <div class="row">
+                    <a href="#/admin" class="thumb"><button class="btn btn-primary" type="button">Admin</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
     <div class="row">
         <div class="col-md-3" ng-repeat="pool in pools">

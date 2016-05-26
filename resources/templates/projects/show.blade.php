@@ -2,8 +2,8 @@
 
 @section('content')
 
-{{-- <div class="container"> --}}
-    {{-- <div class="row"> --}}
+ <div class="container"> 
+     <div class="row"> 
         <div class="col-lg-12">
 <div class="col-md-7 col-lg-8">
     <hr>
@@ -45,17 +45,15 @@
 
 <div class="col-md-5 col-lg-4">
 
-<<<<<<< HEAD
+
     <div class="well panel-info">
-=======
-    <div class="well well-sm">
->>>>>>> 32cac751fe0cc6a72d71c631417838d894ac265c
+
     {!! HTML::linkRoute('projects.edit', 'Edit', array($project->id), array('class' => 'btn btn-info projectBtn')) !!}
     <h4 class="projectText">These are your current posts</h4>
     </div>
 </div>
         </div>
-{{--     </div>
+  </div>
 
     <hr>
 
@@ -67,6 +65,6 @@
         </div>
     </footer>
 
-</div><!-- /.container --> --}}
+</div><!-- /.container -->
 
 @stop

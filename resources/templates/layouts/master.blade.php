@@ -13,25 +13,26 @@
     
     <!-- Add custom CSS here -->
     {!! HTML::style('css/app.css') !!}
-    @include('partials/header')
+
+
 
   </head>
 
   <body>
 
-    {{-- @include('partials/nav') --}}
-        <div class="container">
-      <div class="row">
+    @include('partials/header')
 
-    {{-- <div class="container"> --}}
-    {{-- <div class="row"> --}}
-        {{-- <div class="col-lg-8"> --}}
+    <div class="container">
+    <div class="row">
+        <div class="col-lg-8">
         @yield('content')
-        {{-- </div> --}}
+        </div>
         
-      {{-- @include('partials/sidebar') --}}
 
-      {{-- {!! $posts->links() !!} --}}
+      
+      @include('partials/footer')
+
+
       
       
 

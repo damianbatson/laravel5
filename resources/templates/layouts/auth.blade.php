@@ -7,41 +7,36 @@
     <meta name="author" content="">
 
     <title></title>
-<<<<<<< HEAD
 
     <!-- Bootstrap core CSS -->
         <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"> -->
         <!-- <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"> -->
         <link rel="stylesheet" type="text/css" href="/css/app.css">
-=======
+
       <!-- Bootstrap core CSS -->
     {{-- {!! HTML::style('//netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css') !!} --}}
     {{-- {!! HTML::style('//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css') !!} --}}
-    
-    <!-- Add custom CSS here -->
     {!! HTML::style('css/app.css') !!}
-    @include('partials/authheader')
->>>>>>> 32cac751fe0cc6a72d71c631417838d894ac265c
+    
+
 
   </head>
 
   <body>
+      
+    @include('partials/header')
 
-    {{-- @include('partials/nav') --}}
-        <div class="container">
-      <div class="row">
-
-    {{-- <div class="container"> --}}
-    {{-- <div class="row"> --}}
-        {{-- <div class="col-lg-8"> --}}
+    <div class="container">
+    <div class="row">
+        <div class="col-lg-8">
         @yield('content')
-        {{-- </div> --}}
+        </div>
         
-      {{-- @include('partials/sidebar') --}}
 
-      {{-- {!! $posts->links() !!} --}}
       
-      
+      @include('partials/footer')
+
+  
 
       </div>
 
