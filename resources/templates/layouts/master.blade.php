@@ -7,11 +7,15 @@
     <meta name="author" content="">
 
     <title></title>
-      <!-- Bootstrap core CSS -->
+    
+    <!-- Bootstrap core CSS -->
+
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"> -->
+    <!-- <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" type="text/css" href="/css/app.css">
+
     {{-- {!! HTML::style('//netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css') !!} --}}
     {{-- {!! HTML::style('//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css') !!} --}}
-    
-    <!-- Add custom CSS here -->
     {!! HTML::style('css/app.css') !!}
 
 
@@ -42,11 +46,7 @@
       @include('partials/footer')
       </div>
 
-    {{-- @include('partials/scripts') --}}
-    <!-- Bootstrap core JavaScript -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <!-- Make sure to add jQuery - download the most recent version at http://jquery.com/ -->
-    {!! HTML::script('//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js')!!}
-    {!! HTML::script('//netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js')!!}
+     @include('partials/scripts') 
+
   </body>
 </html>
